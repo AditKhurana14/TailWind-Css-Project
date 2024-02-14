@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+</head>
+
+<body
+    class="bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-indigo-200 via-slate-600 to-indigo-200 text-white">
+    <div class="min-h-screen px-6 py-6 flex flex-col gap-10 lg:px-16 lg:py-3">
+        <header class="flex justify-between">
+            <a href="">
+                <h1 class="text-2xl">Tech1</h1>
+            </a>
+            <ul class="hidden lg:flex lg:items-center lg:font-bold lg:gap-10">
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Location</a></li>
+            </ul>
+            <div class="hidden lg:flex lg:items-center lg:font-bold lg:gap-5">
+                
+                <a href="">Login</a>
+                <button class="rounded-lg bg-white text-black font-serif py-1 px-2">Register</button>
+            </div>
+            <div class="flex items-center justify-center lg:hidden">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+        </header>
+        <main class="lg:flex">
+            <img src="1.jpg" class="py-6 outline outline-white shadow-2xl shadow-black lg:order-2 lg:h-[600px] lg:w-[600px] lg:rounded-full lg:outline-none image-transform">
+            <div class="space-y-6 mt-16 lg:flex-1">
+                <div class="text-7xl font-bold mt-16 lg:mt-32 text-transform">
+                    <h1>Tech1</h1>
+                    <h1>Solutions</h1>
+                </div>
+                <p class="text-transform">Tech1 Solutions helps many industries to build deploy and sell the Product to B-B Companies</p>
+                <form action="" class="flex flex-col  gap-2 md:flex-row md:gap-0 text-transform">
+                    <input type="text" placeholder="Enter City" class=" max-md:rounded-xl px-4 py-3 text-black md:rounded-l-md md:w-60">
+                    <button class="bg-gray-300 py-3 px-4 text-black max-md:rounded-md md:rounded-r-md font-medium whitespace-nowrap">Find Your Office</button>
+                </form>
+                <div class="flex flex-col gap-4 lg:flex-1 lg:order-1 text-transform">
+                    <p class="font-semibold">Our Customers</p>
+                    <ul class="flex gap-6">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-apple"></i></li>
+                </ul>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+<script>
+    const scroll=ScrollReveal(
+{
+    reset:true,
+    duration:2600,
+    distance:'60px'
+}
+    )
+    scroll.reveal('.text-transform',{delay:400,origin:'top'})
+    scroll.reveal('.image-transform',{delay:300,origin:'top'})
+</script>
+
+</body>
+
+</html>
